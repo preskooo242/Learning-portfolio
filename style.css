@@ -297,9 +297,17 @@ footer {
 }
 @media (max-width: 600px) {
   .navbar ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     padding: 10px 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero ul {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
   }
   .font {
     height: auto;
@@ -307,11 +315,6 @@ footer {
   }
   .hero h1 {
     font-size: 24px;
-  }
-  .hero ul {
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
   }
   .apropos {
     padding: 15px 2vw;
@@ -337,5 +340,28 @@ footer {
   form input[type="submit"] {
     font-size: 15px;
     padding: 8px 0;
+  }
+}
+
+/* Boutons côte à côte dans la section hero */
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.hero-btns input[type="button"] {
+  width: 180px;
+  min-width: 0;
+  padding: 8px 0;
+}
+@media (max-width: 600px) {
+  .hero-btns {
+    gap: 8px;
+  }
+  .hero-btns input[type="button"] {
+    width: 45vw;
+    font-size: 14px;
+    padding: 7px 0;
   }
 }
