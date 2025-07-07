@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="font">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#competences">Competences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+        <h1>Bonjour, <br> bienvenue dans mon monde<br>Je suis <span>Prinsney</span><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt="salut" style="width:60px; height:auto; vertical-align:middle;" /></h1>
+        
+        <p>Etudiant en genie logicel et administration reseau, <br>pationnee par le design et tout ce qui est attrait a l'audio-visuelle</p>
+        <input type="button" value="apropos" onclick="location.href='#about'">
+        <input type="button" value="contact" onclick="location.href='#contact'">
+        <ul class="list-inline mt-3">
+            <li class="list-inline-item">
+                <a href="https://twitter.com/" target="_blank" title="Twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://instagram.com/" target="_blank" title="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://linkedin.com/" target="_blank" title="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://github.com/" target="_blank" title="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
+        </ul>
+        </section>
+    </main>
+    </div>
+  <section class="apropos">
+  <div class="apropos-box">
+    <h2 class="text-center" id="about">À propos de moi</h2>
+    <p>
+      Je m'appelle <strong><span>Prinsney</span></strong>, un étudiant passionné par le monde du <strong><span>développement web</span></strong> 
+      et du <strong><span>design numérique</span></strong>.
+      Curieux, créatif et motivé, je rêve de devenir <strong><span>développeur full stack</span></strong>, capable de créer des applications complètes,
+      de l’interface utilisateur jusqu’au cœur du code.
+      <br><br>
+      Mon intérêt ne s'arrête pas au code : je suis également passionné par l’<strong><span>audiovisuel</span></strong>,
+      le <strong><span>montage vidéo</span></strong> et tout ce qui touche à l’<strong><span>esthétique digitale</span></strong>.
+    </p>
+    <input type="button" value="contact" onclick="location.href='#contact'">
+  </div>
+
+  <div class="apropos-img">
+    <img src="image/PC aesthetic.jpg" alt="photo" />
+  </div>
+</section>
+<section>
+    <h2 class="text-center m-2"id="competences" >Compétences</h2>
+    <div class="competences">
+        <div class="competence">
+            <h3><i class="bi bi-code-slash"></i> Développement Web :</h3>
+            <p>HTML, CSS, <br>Bootstrap, <br>JavaScript, <br>PHP, <br>MySQL</p>
+        </div>
+        <div class="competence">
+            <h3><i class="bi bi-palette"></i> Design Graphique :</h3>
+            <p>Adobe Photoshop,<br> Canva, <br>Figma, <br>Adobe XD</p>
+        </div>
+        <div class="competence">
+            <h3><i class="bi bi-camera-reels"></i> Montage Vidéo :</h3>
+            <p>Adobe Premiere Pro,<br> CapCut, <br>Filmora</p>
+        </div>
+        </div>
+
+    </div>
+</section>
+    <section class="info">
+  <div class="container">
+        
+        <form>
+          <h2 id="contact">Contact</h2>
+          <div>
+          <label for="">nom :</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+        <div>
+          <label for="">email :</label>
+          <input type="email" id="email" name="email" placeholder="Votre email" required>
+        </div>
+            <label for="">message :</label>
+            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Prinsney. Tous droits réservés.</p>
+        <p>Ce portfolio est réalisé avec passion, dévouement et bcp de cafe.</p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
