@@ -57,6 +57,7 @@
     display: flex;
     gap: 90px;
     margin: 20px;
+    justify-content: center;
 }
 .hero ul a{
     text-decoration: none;
@@ -315,6 +316,7 @@ footer {
   }
   .hero h1 {
     font-size: 24px;
+    align-items: center;
   }
   .apropos {
     padding: 15px 2vw;
